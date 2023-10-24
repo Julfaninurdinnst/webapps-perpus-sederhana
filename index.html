@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Perpustakaan Sederhana</title>
+</head>
+<body>
+    <header class="header">
+        Perpustakaan Sederhana
+    </header>
+    <div class="container">
+        <div class="rak">
+            <h2>Rak Belum Dibaca</h2>
+            <ul id="belumDibacaList"></ul>
+        </div>
+        <div class="rak">
+            <h2>Rak Sudah Dibaca</h2>
+            <ul id="sudahDibacaList"></ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tambah-buku-form">
+            <h2>Tambah Buku</h2>
+            <input type="text" id="judulBuku" placeholder="Judul Buku" required>
+            <input type="text" id="penulisBuku" placeholder="Penulis" required>
+            <input type="number" id="tahunTerbit" placeholder="Tahun Terbit" required>
+            <input type="text" id="penerbit" placeholder="Penerbit" required>
+            <button onclick="tambahBuku()">Tambah Buku</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cari-buku-form">
+            <h2>Cari Buku</h2>
+            <input type="text" id="cariInput" placeholder="Cari Judul Buku" onkeyup="cariBuku()">
+            <button onclick="tampilkanSemuaData()">Tampilkan Data</button>
+        </div>
+        <div class="hasil-pencarian">
+            <h2>Hasil Pencarian</h2>
+            <ul id="hasilPencarian"></ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="load-data-button"><center>
+            <button onclick="loadDataBelumDibaca()">Load Data Belum Dibaca</button>
+            <button onclick="loadDataSudahDibaca()">Load Data Sudah Dibaca</button></center>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Julfani NST
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

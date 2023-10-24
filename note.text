@@ -1,0 +1,13 @@
+cara menjalankan file
+1) menjalankan file web app ini menggunakan salah satu extension yang ada di
+visual studio code yang yaitu "live server". 
+2) menjalankan file localserver.js yang ada di folder server, 
+anda bisa memilih ingin menggunakan python atau python3.
+menjalankan file harus menggunakan perintah : 
+            "node localserver.js" di terminal.
+
+
+karena jika menjalankan file secara langsung akan muncul beberapa bug yang di akibatkan oleh 
+Beberapa fungsi seperti menyimpan dan membaca dari Local Storage mungkin tidak berfungsi 
+ketika file HTML dijalankan secara langsung dari sistem file lokal 
+karena ada pembatasan keamanan yang diberlakukan oleh browser. 
